@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Restaurant App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <p class="eyebrow">AXSC L5-01 / Chapter 04</p>
+    <h1>Mini Restaurant App</h1>
+    <p class="lead">
+      注文を受け、擬似APIに送り、擬似DBの在庫を確認して、結果を返す小さなWebアプリです。
+    </p>
+  </header>
+
+  <main class="app-layout">
+    <section class="panel">
+      <div class="section-heading">
+        <p class="step-label">Frontend</p>
+        <h2>Menu</h2>
+      </div>
+      <div id="menu-list" class="menu-grid">
+        <!-- JavaScriptでメニューを描画します -->
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="section-heading">
+        <p class="step-label">Response</p>
+        <h2>Order Result</h2>
+      </div>
+      <div id="order-result" class="result-box">
+        まだ注文はありません。
+      </div>
+    </section>
+
+    <section class="panel log-panel">
+      <div class="section-heading">
+        <p class="step-label">Log</p>
+        <h2>Order Logs</h2>
+      </div>
+      <ul id="order-logs" class="log-list">
+        <li>注文ログはここに表示されます。</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
